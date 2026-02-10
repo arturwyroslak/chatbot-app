@@ -1,2 +1,1 @@
-# chatbot-app
-Minimal chatbot application (Node.js + Express) with a simple frontend. Rule-based bot; easily extensible to LLM backends.
+# Chatbot App\n\nMinimal chatbot application (Node.js + Express) with a simple static frontend.\n\n## Run locally\n\n1. Install dependencies\n\n```bash\nnpm install\n```\n\n2. Start\n\n```bash\nnpm start\n```\n\nOpen http://localhost:3000\n\n## Extensibility\n\nThe bot logic is in server.js in generateReply. Replace with an LLM-backed implementation as needed.\n
