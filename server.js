@@ -32,6 +32,8 @@ function generateReply(message) {
   return "Przykro mi, nie rozumiem. Możesz zapytać o pogodę lub napisać 'cześć'.";
 }
 
+module.exports = { generateReply };
+
 app.post('/api/message', (req, res) => {
   try {
     const { message } = req.body;
