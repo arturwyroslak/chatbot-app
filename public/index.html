@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatbot App</title>
+    <style>
+      body { font-family: Arial, sans-serif; background: #f4f4f8; }
+      .chat { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+      .messages { height: 300px; overflow-y: auto; border: 1px solid #eee; padding: 8px; margin-bottom: 8px; }
+      .message { margin: 6px 0; }
+      .message.user { text-align: right; }
+      .input-row { display:flex; gap:8px }
+      input[type="text"]{ flex:1; padding:8px }
+      button{ padding:8px 12px }
+    </style>
+  </head>
+  <body>
+    <div class="chat">
+      <h2>Chatbot App</h2>
+      <div class="messages" id="messages"></div>
+      <div class="input-row">
+        <input id="input" type="text" placeholder="Napisz wiadomość..." />
+        <button id="send">Wyślij</button>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
